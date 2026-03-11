@@ -93,7 +93,7 @@ class main{
   }
 ```
  ## Output :
-![output for 2a](
+![output for 2a](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/058e5184b77959e81ef10f3ded4fe6e68604439f/exp2a.png)
 
 
 
