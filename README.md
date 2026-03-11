@@ -148,7 +148,67 @@ class main{
  ## Output :
 ![output for 2c](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/12c072789e71e0819e254507dac5bbb73d02792a/exp2c.png)
 
+##Additional Experiment:2(Fibonacci series)
+```
+class Fibonacis {
 
+    int firstnumber;
+    int secondnumber;
+    int thirdnumber;
+    int sum;
+    int size_of_fibsequence;
+
+    Fibonacis(int size) {
+        firstnumber = 0;
+        secondnumber = 1;
+        thirdnumber = 0;
+        sum = 0;
+        size_of_fibsequence = size;
+    }
+
+    void generate_fibsequence() {
+
+        while (size_of_fibsequence > 0) {
+
+            if (size_of_fibsequence == 1)
+                System.out.print(firstnumber + " ");
+            else
+                System.out.print(firstnumber + " ");
+
+            sum += firstnumber;
+
+            thirdnumber = firstnumber + secondnumber;
+            firstnumber = secondnumber;
+            secondnumber = thirdnumber;
+
+            size_of_fibsequence--;
+        }
+    }
+    int getfibsum(){
+      return sum;
+  }
+ }
+import java.util.Scanner;
+class main{
+  public static void main(String args[]){
+     System.out.println("Enter size of fibsequence:");
+     Scanner sc=new Scanner(System.in);
+     int size=sc.nextInt();
+     if(size>0){
+     Fibonacis fib=new Fibonacis(size);
+     System.out.println("Fibonacci series are:");
+     fib.generate_fibsequence();
+     System.out.println("The sum of fibonacci series:"+fib.getfibsum());
+     }
+     else{
+     System.out.println("Fibonacci sequence and sum cannot be calculated");
+     }
+}
+}
+```
+
+ ## Output :
+![output for add_exp2](
 
 
 
