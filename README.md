@@ -240,7 +240,7 @@ class main{
 }
 ```
 ##Output:
-[Output for 3a](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/0a1cfcc8c46f7ffdb754d8bb59751f14e252e904/exp3a.png)
+![Output for 3a](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/0a1cfcc8c46f7ffdb754d8bb59751f14e252e904/exp3a.png)
 
 
 
