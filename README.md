@@ -210,6 +210,39 @@ class main{
  ## Output :
 ![output for add_exp2](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/b72c198344dc8c89a0af99828dc29861d352a2f2/Add_exp.png)
 
+##Title:3a(Constructor Overloading)
+```
+class student{
+ String name;
+ int age;
+ double marks;
+ student(){
+ }
+ student(String name,int age,double marks){
+  this.name=name;
+  this.age=age;
+  this.marks=marks;
+}
+void display(){
+  System.out.println("name:"+name);
+  System.out.println("age:"+age);
+  System.out.println("marks:"+marks);
+  }
+}
+
+class main{
+ public static void main(String args[]){
+   student std= new student();
+   std.display();
+   student std1=new student ("sree",19,60);
+   std1.display();
+ }
+}
+```
+##Output:
+[Output for 3a](
+
+
 
 
 
