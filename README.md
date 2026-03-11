@@ -25,7 +25,7 @@ class DefaultPrimitiveType {
 }
 ```
 ## Output :
-![output for 1a](
+![output for 1a](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/85119def5e4c3fcc258f483a433b756a57e3f11c/exp1a.png)
 
 
 
