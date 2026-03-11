@@ -148,7 +148,7 @@ class main{
  ## Output :
 ![output for 2c](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/12c072789e71e0819e254507dac5bbb73d02792a/exp2c.png)
 
-##Additional Experiment:2(Fibonacci series)
+## Title:Additional Experiment:2(Fibonacci series)
 ```
 class Fibonacis {
 
@@ -239,7 +239,7 @@ class main{
  }
 }
 ```
-##Output:
+## Output:
 ![Output for 3a](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/0a1cfcc8c46f7ffdb754d8bb59751f14e252e904/exp3a.png)
 
 
