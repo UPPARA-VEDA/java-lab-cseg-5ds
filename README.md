@@ -121,6 +121,32 @@ class main{
  ## Output :
 ![output for 2b](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/697f65c5631209e19aa82c44c40571386e9cea49/exp2b.png)
 
+## Title:2c(Constructor)
+```
+class Student{
+ String sname;
+ int sage;
+ double smarks;
+ Student(String name,int age,double marks){
+   sname=name;
+   sage=age;
+   smarks=marks;
+  }
+ void display(){
+  System.out.println("student name is :"+sname);
+  System.out.println("student age is :"+sage);
+  System.out.println("stduent marks is:"+smarks);
+  }
+}
+class main{
+ public static void main(String args[]){
+  Student std= new Student("Veda",18,973);
+  std.display();
+  }
+}
+```
+ ## Output :
+![output for 2c](
 
 
 
