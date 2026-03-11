@@ -146,7 +146,7 @@ class main{
 }
 ```
  ## Output :
-![output for 2c](
+![output for 2c](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/12c072789e71e0819e254507dac5bbb73d02792a/exp2c.png)
 
 
 
