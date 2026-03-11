@@ -208,7 +208,7 @@ class main{
 ```
 
  ## Output :
-![output for add_exp2](
+![output for add_exp2](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/b72c198344dc8c89a0af99828dc29861d352a2f2/Add_exp.png)
 
 
 
