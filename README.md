@@ -119,7 +119,7 @@ class main{
 ```
 
  ## Output :
-![output for 2b](
+![output for 2b](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/697f65c5631209e19aa82c44c40571386e9cea49/exp2b.png)
 
 
 
