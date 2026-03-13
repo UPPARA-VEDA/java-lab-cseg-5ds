@@ -341,7 +341,7 @@ class Main {
 }
 ```
 ## Output
-![Output for 3c:](
+![Output for 3c:](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/a775cebee9d728549aa473127303069ad46478bd/exp3c.png)
 
 
 
