@@ -479,7 +479,7 @@ public class TestFigure {
 }
 ```
 ## Output:
-![Output for 4c](
+![Output for 4c](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/2b3fe8464f1010609b1748d9208de3d54d8ca185/exp4c.png)
 
 
 
