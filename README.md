@@ -302,7 +302,7 @@ class Main {
 }
 ```
 ## Output:
-![Output for 3b](
+![Output for 3b](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/df90f475e35fe67962099f8cf80b16127b969581/exp3b.png)
 
 
 
