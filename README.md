@@ -388,7 +388,7 @@ public class TestEmployee {
 }
 ```
 ## Output
-![Output for 4a:](
+![Output for 4a:](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/2a89f27ae58eeaa5156881ad38a4975186cdec35/exp4a.png)
 
 
 
