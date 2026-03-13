@@ -434,7 +434,7 @@ public class TestVehicle {
 }
 ```
 ## Output:
-![Output for 4b]:(
+![Output for 4b]:(https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/a41d1039f35aed6488dcd87c0d589be8890c8672/exp4b.png)
 
 
 
