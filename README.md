@@ -541,7 +541,7 @@ class Testsort {
 }
 ```
 ## Output:
-![Output for 5a](
+![Output for 5a](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/exp5a.png)
 
 ## Title:5b(Impleenting polymorphism)
 ```
@@ -573,7 +573,7 @@ class TestVehicle{
 }
 ```
 ## Output:
-![Output for 5b](
+![Output for 5b](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/exp5b.png)
 
 ## Title:5c(Implementation of String Buffer)
 ```
@@ -590,7 +590,7 @@ class Deletechar{
 }
 ```
 ## Output:
-![Output for 5c](
+![Output for 5c](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/exp5c.png)
 
 ## Title:6a(Exception Handling)
 ```
@@ -617,7 +617,7 @@ class ArrayIndexExceptionDemo {
 }
 ```
 ## Output:
-![Output for 6a](
+![Output for 6a](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/exp6a.png)
 
 ## Title:6b(Multiple catch blocks)
 ```
@@ -651,7 +651,7 @@ class MultipleCatchDemo {
     }
 ```
 ## Output:
-![Output for 6b](
+![Output for 6b](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/exp6b.png)
 
 ## Title:6c(Built-in Exceptions)
 ```
@@ -688,7 +688,8 @@ class BuiltInException {
 }
 ```
 ## Output:
-![Output for 6c](
+![Output for 6c](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/exp6c.png)
+
 
 ## Title:Additional_Experiment 1(Insert substring into mainString)
 ```
@@ -725,7 +726,7 @@ class InsertSubstring {
 }
 ````
 ## Output:
-![Output for Additional_experiment 1](
+![Output for Additional_experiment 1](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/Additional_exp%201.png)
 
 ## Title:Additional_Experiment 3(String is palindrome or not)
 ```
@@ -762,7 +763,7 @@ class PalindromeCheck
 }
 ```
 ## Output:
-![Output for Additional_experiment 3](
+![Output for Additional_experiment 3](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/Additional_exp%203.png)
 
 ## Title:Additional_Experiment 4(Check if a number is perfect number or not)
 ```
@@ -801,7 +802,8 @@ class PerfectNumber
 }
 ```
 ## Output:
-![Output for Additional_experiment 4](
+![Output for Additional_experiment 4](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/Additional_exp%204.png)
+
 
 ## Title:7a(User-defined Exception)
 ```
@@ -838,7 +840,7 @@ class UserRegion {
 }
 ```
 ## Output:
-![Output for 7a](
+![Output for 7a](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/exp7a.png)
 
 ## Title:7b(Creating threads by extending thread class)
 ```
@@ -894,7 +896,8 @@ class GoodMorningThread extends Thread {
          }
 ```
 ## Output:
-![Output for 7b](
+![Output for 7b](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/exp7b.png)
+
 
 ## Title:7c(Illustrating isAlive() and join())
 ```
@@ -937,7 +940,7 @@ public class ThreadDemo {
 }
 ```
 ## Output:
-![Output for 7c](
+![Output for 7c](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/exp7c.png)
 
 ## Title:8a(Illustrating Daemon Threads)
 ```
@@ -978,7 +981,7 @@ class TestDaemon{
 }
 ```
 ## Output:
-![Output for 8a](
+![Output for 8a](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/exp8a.png)
 
 ## Title:8b(Producer Consumer problem )
 ```
@@ -1083,7 +1086,8 @@ public class ProducerConsumerDemo {
 }
 ```
 ## Output:
-![Output for 8b](
+![Output for 8b](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/exp8b.png)
+
 ## Title:8c(Import and use the user defined packages)
 ```
 package arithmetic;
@@ -1117,7 +1121,7 @@ class Calculate {
 }
 ```
 ## Output:
-![Output for 8c](
+![Output for 8c](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/exp8c.png)
 
 ## Title:Additional Experiment:5
 ```
@@ -1195,7 +1199,7 @@ class Cricket
 }
 ```
 ## Output:
-![Output for Additional_exp 5](
+![Output for Additional_exp 5](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/Additional_exp%205.png)
 
 ## Title:11(Railway Reservation)
 ```
@@ -1244,6 +1248,7 @@ class Person extends Thread {
 }
 ```
 ## Output:
-![Output for exp 11](
+![Output for exp 11](https://github.com/UPPARA-VEDA/java-lab-cseg-5ds/blob/552d272254becb187e443d9dd3773608d9d5799d/exp11.png)
+
 
 
