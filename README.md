@@ -690,3 +690,560 @@ class BuiltInException {
 ## Output:
 ![Output for 6c](
 
+## Title:Additional_Experiment 1(Insert substring into mainString)
+```
+import java.util.Scanner;
+
+class InsertSubstring {
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a string:");
+        String mainString = sc.nextLine();
+
+        System.out.println("Substring:");
+        String subString = sc.nextLine();
+
+        System.out.println("Position:");
+        int position = sc.nextInt();
+
+        if (position < 0 || position > mainString.length()) {
+            System.out.println("Invalid position");
+        } 
+        else {
+            String firstpart = mainString.substring(0, position);
+            String secondpart = mainString.substring(position);
+
+            String resultstring = firstpart + subString + secondpart;
+
+            System.out.println("The resultant string = " + resultstring);
+        }
+
+        sc.close();
+    }
+}
+````
+## Output:
+![Output for Additional_experiment 1](
+
+## Title:Additional_Experiment 3(String is palindrome or not)
+```
+import java.util.Scanner;
+
+class PalindromeCheck
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a string:");
+        String str = sc.nextLine();
+
+        int start = 0;
+        int end = str.length() - 1;
+
+        while(start < end)
+        {
+            if(str.charAt(start) != str.charAt(end))
+            {
+                System.out.println("The string \"" + str + "\" is not a palindrome");
+                sc.close();
+                return;
+            }
+
+            start++;
+            end--;
+        }
+
+        System.out.println("The string \"" + str + "\" is a palindrome");
+        sc.close();
+    }
+}
+```
+## Output:
+![Output for Additional_experiment 3](
+
+## Title:Additional_Experiment 4(Check if a number is perfect number or not)
+```
+import java.util.Scanner;
+
+class PerfectNumber
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+
+        int sum = 0;
+
+        for(int i = 1; i < num; i++)
+        {
+            if(num % i == 0)
+            {
+                sum = sum + i;
+            }
+        }
+
+        if(sum == num)
+        {
+            System.out.println(num + " is a perfect number");
+        }
+        else
+        {
+            System.out.println(num + " is not a perfect number");
+        }
+
+        sc.close();
+    }
+}
+```
+## Output:
+![Output for Additional_experiment 4](
+
+## Title:7a(User-defined Exception)
+```
+class InvalidCountryException extends Exception {
+          InvalidCountryException() {
+              super();
+              }
+              InvalidCountryException(String message) {
+              super(message);
+              }
+            }
+class UserRegion {
+
+    void registerUser(String userName, String userCountry) throws InvalidCountryException {
+
+        if (!userCountry.equals("India")) {
+            throw new InvalidCountryException("User outside India cannot be registered");
+        } else {
+            System.out.println("User registration done successfully");
+        }
+    }
+
+    public static void main(String args[]) {
+
+        UserRegion ur = new UserRegion();
+
+        try {
+            ur.registerUser("Ravi", "USA");
+        }
+        catch (InvalidCountryException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
+```
+## Output:
+![Output for 7a](
+
+## Title:7b(Creating threads by extending thread class)
+```
+class GoodMorningThread extends Thread {
+    public void run() {
+        while (true) {
+            System.out.println("Good Morning");
+            try {
+                Thread.sleep(1000); 
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+  class HelloThread extends Thread {
+     public void run() {
+          while(true) {
+            System.out.println("Hello");
+         try {
+            Thread.sleep(2000);
+         }
+         catch(InterruptedException e) {
+               System.out.print(e);
+           }
+        }
+    }
+  }
+   class WelcomeThread extends Thread {
+         public void run() {
+          while(true) {
+        System.out.println("Welcome");
+         try {
+           Thread.sleep(3000);
+         }
+         catch(InterruptedException e) {
+         System.out.print(e);
+         }
+       }
+     }
+   }
+  class TestThreads {
+     public static void main(String args[]) {
+            GoodMorningThread t1 = new GoodMorningThread();
+            HelloThread t2 = new HelloThread();
+            WelcomeThread t3 = new WelcomeThread();
+
+
+            t1.start();
+            t2.start();
+            t3.start();
+           }
+         }
+```
+## Output:
+![Output for 7b](
+
+## Title:7c(Illustrating isAlive() and join())
+```
+class LongRunningTask extends Thread {
+        public void run() {
+      System.out.println("Long running task started...");
+      try {
+            for(int i=1;i<= 5;i++) {
+      System.out.println("Working..." +i);
+            Thread.sleep(1000);
+        }
+     }
+      catch(InterruptedException e) {
+       System.out.println(e);
+   }
+  System.out.println("Long running task completed!");
+      }
+     }
+public class ThreadDemo {
+    public static void main(String[] args) {
+
+        LongRunningTask task1 = new LongRunningTask();
+
+        System.out.println("Before starting task1: " + task1.isAlive());
+
+        task1.start();
+
+        System.out.println("After starting task1: " + task1.isAlive());
+
+        try {
+            System.out.println("Main thread waiting for task1 to complete using join()...");
+            task1.join();
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+
+        System.out.println("After task1 completion: " + task1.isAlive());
+        System.out.println("Main thread continues execution.");
+    }
+}
+```
+## Output:
+![Output for 7c](
+
+## Title:8a(Illustrating Daemon Threads)
+```
+class DaemonThread extends Thread {
+     public void run() {
+      while(true) {
+     System.out.println("Daemon thread running");
+      try {
+      Thread.sleep(500);
+       }catch(InterruptedException e) {
+        System.out.print(e);
+         }
+      }
+}
+}
+  class UserThread extends Thread {
+     public void run() {
+          while(true) {
+          for(int i=1;i<=5;i++) {
+            System.out.println("User thread iteration:" +i);
+            try {  
+         Thread.sleep(1000);
+          }catch(InterruptedException e) {
+             System.out.print(e);
+        }
+      }
+    }
+}
+}
+class TestDaemon{
+    public static void main(String[]args){
+              UserThread userThread=new UserThread();
+              DaemonThread daemonThread=new DaemonThread();
+              daemonThread.setDaemon(true);
+              userThread.start();
+              daemonThread.start();
+         }
+}
+```
+## Output:
+![Output for 8a](
+
+## Title:8b(Producer Consumer problem )
+```
+ class Buffer {
+       int[] buffer;
+       int count = 0;
+       int in = 0, out = 0;
+       Buffer(int size) {
+         buffer = new int[size];
+       }
+}
+class Consumer {
+
+    int[] buffer;
+    int count;
+    int out = 0;
+
+    Consumer(int[] buffer, int count) {
+        this.buffer = buffer;
+        this.count = count;
+    }
+
+    synchronized int consume() {
+        while (count == 0) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+            }
+        }
+
+        int item = buffer[out];
+        out = (out + 1) % buffer.length;
+        count--;
+        notify();
+        return item;
+    }
+}
+class Producer {
+
+    int[] buffer;
+    int count = 0;
+    int in = 0;
+
+    Producer(int size) {
+        buffer = new int[size];
+    }
+
+    synchronized void produce(int item) {
+        while (count == buffer.length) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+            }
+        }
+
+        buffer[in] = item;
+        in = (in + 1) % buffer.length;
+        count++;
+        notify();
+    }
+}
+class Producer extends Thread {
+    Buffer buffer;
+
+    Producer(Buffer buffer) {
+        this.buffer = buffer;
+    }
+
+    public void run() {
+        for (int i = 1; i <= 10; i++) {
+            buffer.produce(i);
+            System.out.println("Produced: " + i);
+        }
+    }
+}
+
+  class SharedBuffer {
+    int [] buffer;
+    int count = 0;
+    int in = 0, out = 0;
+    Buffer(int size) {
+       buffer new int[size];
+  class SharedBuffer {
+       int[] buffer;
+       int count = 0;
+       int in = 0, out = 0;
+       Buffer(int size) {
+         buffer = new int[size];
+       }
+public class ProducerConsumerDemo {
+    public static void main(String[] args) {
+
+        Buffer buffer = new Buffer(5);
+        int N = 10;
+
+        Producer p = new Producer(buffer, N);
+        Consumer c = new Consumer(buffer, N);
+
+        p.start();
+        c.start();
+    }
+}
+```
+## Output:
+![Output for 8b](
+## Title:8c(Import and use the user defined packages)
+```
+package arithmetic;
+public class ArithmeticOperations {
+    public int add(int x, int y) {
+        return x + y;
+    }
+    public int subtraction(int x, int y) {
+        return x - y;
+    }
+    public int multiplication(int x, int y) {
+        return x * y;
+    }
+    public int division(int x, int y) {
+        return x / y;
+    }
+}
+import arithmetic.ArithmeticOperations;
+class Calculate {
+    public static void main(String[] args) {
+        ArithmeticOperations ae = new ArithmeticOperations();
+        int sum = ae.add(10, 5);
+        System.out.println("Addition: " + sum);
+        int diff = ae.subtraction(10, 5);
+        System.out.println("Subtraction: " + diff);
+        int prod = ae.multiplication(10, 5);
+        System.out.println("Multiplication: " + prod);
+        int div = ae.division(10, 5);
+        System.out.println("Division: " + div);
+    }
+}
+```
+## Output:
+![Output for 8c](
+
+## Title:Additional Experiment:5
+```
+import java.util.Scanner;
+
+class Cricket
+{
+    String playerName;
+    String teamName;
+    double battingAverage;
+    Cricket(String playerName, String teamName, double battingAverage)
+    {
+        this.playerName = playerName;
+        this.teamName = teamName;
+        this.battingAverage = battingAverage;
+    }
+    void display()
+    {
+        System.out.println("Player: " + playerName + ", Batting Average: " + battingAverage);
+    }
+
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Number of players: ");
+        int n = sc.nextInt();
+        sc.nextLine();
+        Cricket players[] = new Cricket[n];
+        for(int i = 0; i < n; i++)
+        {
+            System.out.println("Player " + (i+1));
+
+            System.out.print("Name: ");
+            String playerName = sc.nextLine();
+
+            System.out.print("Team: ");
+            String teamName = sc.nextLine();
+
+            System.out.print("Batting Average: ");
+            double battingAverage = sc.nextDouble();
+            sc.nextLine();
+
+            players[i] = new Cricket(playerName, teamName, battingAverage);
+        }
+        for(int i = 0; i < n; i++)
+        {
+            boolean printed = false;
+
+            // check if team already printed
+            for(int j = 0; j < i; j++)
+            {
+                if(players[i].teamName.equals(players[j].teamName))
+                {
+                    printed = true;
+                    break;
+                }
+            }
+
+            if(!printed)
+            {
+                System.out.println("Team: " + players[i].teamName);
+
+                for(int k = 0; k < n; k++)
+                {
+                    if(players[k].teamName.equals(players[i].teamName))
+                    {
+                        players[k].display();
+                    }
+                }
+            }
+        }
+
+        sc.close();
+    }
+}
+```
+## Output:
+![Output for Additional_exp 5](
+
+## Title:11(Railway Reservation)
+```
+class Reservation {
+    private int availableBerths;
+    Reservation(int berths) {
+        this.availableBerths = berths;
+    }
+    public synchronized void bookTicket(String name, int requestedBerths) {
+        System.out.println(name + " is requesting " + requestedBerths + " berths.");
+        if (requestedBerths <= availableBerths) {
+            System.out.println("Berths available. Booking for " + name);
+            availableBerths -= requestedBerths;
+            System.out.println("Ticket booked for " + name);
+            System.out.println("Remaining berths: " + availableBerths);
+        } else {
+            System.out.println("No berths available for " + name);
+        }
+        System.out.println("--------------------------------");
+    }
+}
+class Person extends Thread {
+    private Reservation reservation;
+    private String personName;
+    private int berthsNeeded;
+    Person(Reservation reservation, String name, int berths) {
+        this.reservation = reservation;
+        this.personName = name;
+        this.berthsNeeded = berths;
+    }
+    public void run() {
+        reservation.bookTicket(personName, berthsNeeded);
+    }
+}
+ public class RailwayReservation {
+    public static void main(String[] args) {
+        Reservation reservation = new Reservation(5);
+        Person p1 = new Person(reservation, "Vishnu", 2);
+        Person p2 = new Person(reservation, "Siri", 3);
+        Person p3 = new Person(reservation, "Neha", 2);
+        p1.start();
+        p2.start();
+        p3.start();
+
+   }
+}
+```
+## Output:
+![Output for exp 11](
+
+
